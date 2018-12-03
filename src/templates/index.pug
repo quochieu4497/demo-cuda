@@ -1,0 +1,234 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+block body
+	section.home-services
+		.container
+			.row
+				.col.ser-top
+					h2 SERVICES WE PROVIDE
+					p Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam
+			.row
+				.col.abc
+					img(src="img/home_icon_1.png", alt="")
+					h3 Branding
+					p Lorem ipsum dolor sit amet,consectetuer adipiscing elit, sed diam nonummy nibh.
+				.col.abc
+					img(src="img/home_icon_2.png", alt="")
+					h3 Design
+					p Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+				.col.abc
+					img(src="img/home_icon_3.png", alt="")
+					h3 Development
+					p At vero eos et accusamus et iusto odio dignissimos qui blanditi
+				.col.abc
+					img(src="img/home_icon_4.png", alt="")
+					h3 Rocket 1 Tuan
+					p Et harum quidem rerum est et expedita distinctio. Nam libero te 
+	section.home-team
+		.container
+			.row
+				.col.team-top
+					h2 MEET OUR BEAUTIFUL TEAM
+					p Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam
+			.row
+				.col.xyz
+					img.img-team(src="img/home_guest_1.png", alt="")
+					h3 Branding
+					a(href="#") CEO / Marketing Guru
+					p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+					.row
+						a.logo_contact(href="#") 
+							img(src="img/fb.png", alt="")
+						a.logo_contact(href="#") 
+							img(src="img/chim.png", alt="")
+						a.logo_contact(href="#") 
+							img(src="img/in.png", alt="")
+						a.logo_contact(href="#") 
+							img(src="img/mail.png", alt="")
+				.col.xyz
+					img.img-team(src="img/home_guest_3.png", alt="")
+					h3 Kate Upton
+					a(href="#") Creative Director
+					p Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.
+					.row
+						a.logo_contact(href="#") 
+							img(src="img/fb.png", alt="")
+						a.logo_contact(href="#") 
+							img(src="img/chim.png", alt="")
+						a.logo_contact(href="#") 
+							img(src="img/in.png", alt="")
+						a.logo_contact(href="#") 
+							img(src="img/mail.png", alt="")
+				.col.xyz
+					img.img-team(src="img/home_guest_3.png", alt="")
+					h3 Olivia Wilde
+					a(href="#") Lead Designer
+					p Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.
+					.row
+						a.logo_contact(href="#") 
+							img(src="img/fb.png", alt="")
+						a.logo_contact(href="#") 
+							img(src="img/chim.png", alt="")
+						a.logo_contact(href="#") 
+							img(src="img/in.png", alt="")
+						a.logo_contact(href="#") 
+							img(src="img/mail.png", alt="")
+
+				.col.xyz
+					img.img-team(src="img/home_guest_1.png", alt="")
+					h3 ANNE HATHAWAY
+					a(href="#") SEO / Developer
+					p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+					.row
+						a.logo_contact(href="#") 
+							img(src="img/fb.png", alt="")
+						a.logo_contact(href="#") 
+							img(src="img/chim.png", alt="")
+						a.logo_contact(href="#") 
+							img(src="img/in.png", alt="")
+						a.logo_contact(href="#") 
+							img(src="img/mail.png", alt="")
+	section.home-skill
+		.container
+			.row.scroll-elm
+				.col.skill-top
+					h2 WE GOT SKILLS!
+					p.flex-content-center Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam
+			.row.chart
+				.col-sm-6.col-lg-3.colll
+					.item#data-cn1(data-count="90")
+						canvas.myDoughnutChart
+						.content
+							span.js-count 90
+							span.percent %
+					h3 WEB DESIGN
+				.col-sm-6.col-lg-3.colll
+					.item#data-cn2(data-count="75")
+						canvas.myDoughnutChart
+						.content
+							span.js-count 75
+							span.percent %
+					h3 HTML/CSS
+				.col-sm-6.col-lg-3.colll
+					.item#data-cn3(data-count="70")
+						canvas.myDoughnutChart
+						.content
+							span.js-count 70
+							span.percent %
+					h3 GRAPHIC DESIGN
+				.col-sm-6.col-lg-3.colll
+					.item#data-cn4(data-count="85")
+						canvas.myDoughnutChart
+						.content
+							span.js-count 85
+							span.percent %
+					h3 UX/UI
+	section.home-our
+		.container
+			.row
+				.col.our-top
+					h2 OUR PORTFOLIO
+					p Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam
+			.row.farther-filter
+				.col
+					.tab
+						ul.filter
+							li.btn.btn-primary.active.mr-3(data-open="tab1") ALL
+							li.btn.btn-primary.mr-3(data-open="tab2") WEB
+							li.btn.btn-primary.mr-3(data-open="tab3") APPS
+							li.btn.btn-primary.mr-3(data-open="tab4") ICONS
+						.contaier
+							.row.item.active#tab1
+								.col-md-6
+									img.hinh.img-fluid(src="img/home_services_1.png", alt="")
+									h3 Isometric Perspective Mock-Up
+								.col-md-6
+									img.hinh.img-fluid(src="img/home_services_2.png", alt="")
+									h3 Time Zone App UI
+								.col-md-6
+									img.hinh.img-fluid(src="img/home_services_3.png", alt="")
+									h3 Viro Media Players UI
+								.col-md-6
+									img.hinh.img-fluid(src="img/home_services_4.png", alt="")
+									h3 Blog / Magazine Flat UI Kit
+
+							.row.item#tab2
+								.col-md-6
+									img.hinh.img-fluid(src="img/home_services_2.png", alt="")
+									h3 Time Zone App UI
+								.col-md-6
+									img.hinh.img-fluid(src="img/home_services_4.png", alt="")
+									h3 Blog / Magazine Flat UI Kit
+							.row.item#tab3
+								.col-md-6
+									img.hinh.img-fluid(src="img/home_services_1.png", alt="")
+									h3 Isometric Perspective Mock-Up
+								
+							.row.item#tab4
+								.col-md-6
+									img.hinh.img-fluid(src="img/home_services_1.png", alt="")
+									h3 Isometric Perspective Mock-Up
+								.col-md-6
+									img.hinh.img-fluid(src="img/home_services_2.png", alt="")
+									h3 Time Zone App UI
+								
+			.row
+				.col
+					p
+						a.btn.btn-loadmore(href="#") LOAD MORE PROJECTS
+	section.home-review
+		.container
+			.row
+				.col.review-top
+					h2 WHAT POEPLE SAY ABOUT US
+					p Our clients love us!
+			.row
+				.col-md-6
+					.row
+						.col-md-4
+							p Hinh
+						.col-md-8
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis sint rerum ea offici
+				.col-md-6
+					.row
+						.col-md-4
+							p Hinh
+						.col-md-8
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis sint rerum ea offici
+				.col-md-6
+					.row
+						.col-md-4
+							p Hinh
+						.col-md-8
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis sint rerum ea offici
+				.col-md-6
+					.row
+						.col-md-4
+							p Hinh
+						.col-md-8
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis sint rerum ea offici
+	section.home-contact
+		.container
+			.row
+				.col.top
+					h2 FULLSTACK VIETNAM
+					p Địa chỉ: 28 đường số 2 – CITY LAND – Phường 7 – Gò Vấp – HCM
+			.row
+				.col
+					form
+						.row
+							.col.pl-0
+								input#exampleFormControlInput1.form-control(type='text', placeholder='Your Name')
+							.col.pr-0
+								input#exampleFormControlInput1.form-control(type='email', placeholder='Your Email')
+						.row.mt-4
+							textarea#exampleFormControlTextarea1.form-control(rows='5',placeholder='Message')
+			.row
+				.col
+					p
+						a.btn.btn-send(href="#") SEND MESSAGE
+	
