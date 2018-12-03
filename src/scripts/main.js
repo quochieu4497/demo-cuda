@@ -1,8 +1,8 @@
 
-var elm = $('.home-skill').offset().top
+var elm = $('.home-our').offset().top
 
 $(window).scroll(function () {
-	if ($(window).scrollTop() >= elm && $(window).scrollTop() < elm+10) {
+	if ($(window).scrollTop()+$(window).height() >= elm-10 && $(window).scrollTop()+$(window).height() < elm) {
 		myDoughnutChart()
 	}
 })
@@ -11,8 +11,6 @@ $(document).ready(function () {
 	myDoughnutChart()
 });
 //filter
-
-
 function fiter() {
 	$('.home-our .container .farther-filter .tab .filter li').on('click', function () {
 		$(this).parents('.tab').find('li').removeClass('active')
