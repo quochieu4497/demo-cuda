@@ -187,13 +187,51 @@ body
 			+button-center()
 	.home-review
 		background: #d74680
+		color: #fff
 		.container
+				
+			p
+				+fz(1rem)
 			.review-top
-				+h2-title(#fff, #b73c6d)
+					+h2-title(#fff, #b73c6d)
+			.preview	
+				+pad(5rem null)
+				.ctn-preview
+					display: flex
+					align-items: center
+					justify-content: center
+					text-align: center
+
+					+pad(2rem null)
+					.img-preview
+						overflow: hidden
+						background: #787878
+						border-radius: 50%
+						max-width: 100px
+						max-height: 100px
+						padding: 0
+						img
+							max-width: 100px
+							max-height: 100px
+				.text-preview
+					text-align: center
+					+mar(.5rem .5rem)
+					h4
+						+fz(1.7rem)
+						margin-bottom: 0
+					.sign
+						color: #ffdd99
+				+media-breakpoint-up(md)
+					.row
+						flex-wrap: nowrap
+					.text-preview
+						text-align: left
+					
 	.home-contact
 		background: #3c5499
 		min-height: 802px
 		form
+			+pad(5rem 4rem)
 			margin-top: 2rem
 		input,textarea
 			background: #273a71

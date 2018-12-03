@@ -6601,7 +6601,10 @@ body .home-our {
       box-shadow: 0 -4px 0 0 #0e7865 inset; }
 
 body .home-review {
-  background: #d74680; }
+  background: #d74680;
+  color: #fff; }
+  body .home-review .container p {
+    font-size: 1rem; }
   body .home-review .container .review-top {
     font-size: 1.28rem;
     text-align: center;
@@ -6628,11 +6631,51 @@ body .home-review {
       padding-top: 1.78rem;
       max-width: 570px;
       color: #fff; }
+  body .home-review .container .preview {
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+    body .home-review .container .preview .ctn-preview {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 2rem;
+      padding-bottom: 2rem; }
+      body .home-review .container .preview .ctn-preview .img-preview {
+        overflow: hidden;
+        background: #787878;
+        border-radius: 50%;
+        max-width: 100px;
+        max-height: 100px;
+        padding: 0; }
+        body .home-review .container .preview .ctn-preview .img-preview img {
+          max-width: 100px;
+          max-height: 100px; }
+    body .home-review .container .preview .text-preview {
+      text-align: center;
+      margin-top: 0.5rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      margin-left: 0.5rem; }
+      body .home-review .container .preview .text-preview h4 {
+        font-size: 1.7rem;
+        margin-bottom: 0; }
+      body .home-review .container .preview .text-preview .sign {
+        color: #ffdd99; }
+    @media (min-width: 768px) {
+      body .home-review .container .preview .row {
+        flex-wrap: nowrap; }
+      body .home-review .container .preview .text-preview {
+        text-align: left; } }
 
 body .home-contact {
   background: #3c5499;
   min-height: 802px; }
   body .home-contact form {
+    padding-top: 5rem;
+    padding-right: 4rem;
+    padding-bottom: 5rem;
+    padding-left: 4rem;
     margin-top: 2rem; }
   body .home-contact input, body .home-contact textarea {
     background: #273a71;
