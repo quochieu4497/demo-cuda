@@ -1,8 +1,8 @@
 
-var elm = $('.home-skill .chart h3').offset().top
+var elm = $('.home-skill').offset().top
 
 $(window).scroll(function () {
-	if ($(window).scrollTop()+$(window).height() >= elm && $(window).scrollTop()+$(window).height() < elm+10) {
+	if ($(window).scrollTop() >= elm && $(window).scrollTop() < elm+10) {
 		myDoughnutChart()
 	}
 })
